@@ -1,0 +1,23 @@
+{
+  "name": "linna-sass",
+  "version": "1.0.0",
+  "description": "Useful Sass utilities and default styles",
+  "main": "index.scss",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "patch": "npm version patch -m \"New patch version\" && npm publish && git push -u",
+    "minor": "npm version minor -m \"New minor version\" && npm publish && git push -u",
+    "major": "npm version major -m \"New major version\" && npm publish && git push -u"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jerryjappinen/linna-sass.git"
+  },
+  "author": {
+    "name": "Jerry Jäppinen",
+    "email": "eiskis@gmail.com"
+  },
+  "license": "MIT"
+}
