@@ -1,52 +1,54 @@
-// Percentage-based buffers
+// Double buffers
 
-@mixin buffer-relative {
-  padding: $buffer-relative-tight $buffer-relative $buffer-relative $buffer-relative;
+@mixin buffer-relative ($step: 1) {
+  @include buffer-relative-horizontal($step);
+  @include buffer-relative-vertical($step);
 }
 
-@mixin buffer-relative-even {
-  padding: $buffer-relative;
+@mixin buffer-relative-even ($step: 1) {
+  @include buffer-relative-horizontal($step);
+  @include buffer-relative-vertical-even($step);
 }
 
 
 
 // Pane
 
-@mixin buffer-relative-horizontal {
-  padding-left: $buffer-relative;
-  padding-right: $buffer-relative;
+@mixin buffer-relative-horizontal ($step: 1) {
+  @include buffer-relative-left($step);
+  @include buffer-relative-right($step);
 }
 
-@mixin buffer-relative-vertical {
-  padding-top: $buffer-relative-tight;
-  padding-bottom: $buffer-relative;
+@mixin buffer-relative-vertical ($step: 1) {
+  @include buffer-relative-top($step);
+  @include buffer-relative-bottom($step);
 }
 
-@mixin buffer-relative-vertical-even {
-  padding-top: $buffer-relative;
-  padding-bottom: $buffer-relative;
+@mixin buffer-relative-vertical-even ($step: 1) {
+  @include buffer-relative-top-even($step);
+  @include buffer-relative-bottom($step);
 }
 
 
 
 // Single
 
-@mixin buffer-relative-top {
-  padding-top: $buffer-relative-tight;
+@mixin buffer-relative-top ($step: 1) {
+  padding-top: $step * $buffer-relative-tight;
 }
 
-@mixin buffer-relative-top-even {
-  padding-top: $buffer-relative;
+@mixin buffer-relative-top-even ($step: 1) {
+  padding-top: $step * $buffer-relative;
 }
 
-@mixin buffer-relative-right {
-  padding-right: $buffer-relative;
+@mixin buffer-relative-bottom ($step: 1) {
+  padding-bottom: $step * $buffer-relative;
 }
 
-@mixin buffer-relative-bottom {
-  padding-bottom: $buffer-relative;
+@mixin buffer-relative-left ($step: 1) {
+  padding-left: $step * $buffer-relative;
 }
 
-@mixin buffer-relative-left {
-  padding-left: $buffer-relative;
+@mixin buffer-relative-right ($step: 1) {
+  padding-right: $step * $buffer-relative;
 }

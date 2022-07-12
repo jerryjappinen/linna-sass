@@ -1,13 +1,13 @@
 // Small margins
 
 @mixin push-tight ($step: 1) {
-  @include push-tight-horizontal;
-  @include push-tight-vertical;
+  @include push-tight-horizontal($step);
+  @include push-tight-vertical($step);
 }
 
 @mixin push-tight-even ($step: 1) {
-  @include push-tight-horizontal;
-  @include push-tight-vertical-even;
+  @include push-tight-horizontal($step);
+  @include push-tight-vertical-even($step);
 }
 
 
@@ -15,18 +15,18 @@
 // Pane
 
 @mixin push-tight-horizontal ($step: 1) {
-  @include push-tight-left;
-  @include push-tight-right;
+  @include push-tight-left($step);
+  @include push-tight-right($step);
 }
 
 @mixin push-tight-vertical ($step: 1) {
-  @include push-tight-top;
-  @include push-tight-bottom;
+  @include push-tight-top($step);
+  @include push-tight-bottom($step);
 }
 
 @mixin push-tight-vertical-even ($step: 1) {
-  @include push-tight-top-even;
-  @include push-tight-bottom;
+  @include push-tight-top-even($step);
+  @include push-tight-bottom($step);
 }
 
 

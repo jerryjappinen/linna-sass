@@ -1,6 +1,6 @@
 # linna-scss
 
-`linna-scss` is a collection of useful, generic mixins and functions for developing web sites and apps.
+`linna-scss` is a collection of useful, generic mixins and functions for developing web sites and apps. Designed to be compatible with `linna-vue`, but can be used independently.
 
 ## Quick start
 

@@ -1,4 +1,12 @@
-@mixin dimensions-landscape ($width) {
+// 1920/1080 = 16/9 = 1.77777778
+@mixin dimensions ($width, $ratio: (16/9)) {
   width: $width;
-  height: 0.625 * $width;
+  height: $width / $ratio;
+}
+
+// 1080/1920 = 9/16 = 0.5625
+// @include dimensions-height(1080);
+@mixin dimensions-height ($height, $ratio: (9/16)) {
+  width: $height / $ratio;
+  height: $height;
 }
