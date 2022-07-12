@@ -1,5 +1,5 @@
-@if variable-exists(local-web-fonts) {
-  @each $values in $local-web-fonts {
+@if variable-exists(webfonts) {
+  @each $values in $webfonts {
 
     // Read config
     $font-family: map-get($values, font-family);

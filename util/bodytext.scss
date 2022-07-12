@@ -10,7 +10,7 @@
 
     &:hover,
     &:active {
-      color: $default-link-active-color;
+      color: $link-active-color;
     }
 
   }
@@ -100,4 +100,50 @@
 
 .bodytext-discreet {
   @include discreet;
+}
+
+
+
+// Individual elements
+
+.bodytext-link {
+  @include link;
+
+  &:hover,
+  &:active {
+    color: $link-active-color;
+  }
+
+}
+
+// Regular list content is sometimes wrapped in paragraphs
+.bodytext-list-item {
+  > p {
+    @include no-push-vertical;
+  }
+}
+
+// Heading levels
+.bodytext-h1 {
+  @include h1;
+}
+
+.bodytext-h2 {
+  @include h2;
+}
+
+.bodytext-h3 {
+  @include h3;
+}
+
+.bodytext-h4 {
+  @include h4;
+}
+
+.bodytext-h5 {
+  @include h5;
+}
+
+.bodytext-h6 {
+  @include h6;
 }

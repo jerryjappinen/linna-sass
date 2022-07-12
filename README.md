@@ -24,6 +24,7 @@ In your SCSS code, import what you need:
 // Normalizations and defaults: (these output CSS)
 @import '~linna-scss/normalize';
 @import '~linna-scss/defaults';
+@import '~linna-scss/util';
 
 // Then import your own styles
 @import './my-styles/my-own-code.scss';
@@ -33,8 +34,13 @@ In your SCSS code, import what you need:
 If you prefer, you can pick only specific files from the codebase:
 
 ```scss
+@import './variables';
+@import './functions';
+@import './mixins';
+
 @import './defaults/forms';
 @import './defaults/tables';
+@import './util/bodytext';
 ```
 
 ### Importing in a JavaScript file

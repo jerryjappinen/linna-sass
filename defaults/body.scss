@@ -14,8 +14,8 @@ body {
     color: $default-text-color;
   }
 
-  @if variable-exists(default-background-color) {
-    background-color: $default-background-color;
+  @if variable-exists(body-background-color) {
+    background-color: $body-background-color;
   }
 
   @if variable-exists(default-line-height) {

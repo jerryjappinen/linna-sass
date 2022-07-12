@@ -1,0 +1,28 @@
+// Text
+$default-font: null !default;
+$default-font-size: 16px !default;
+$default-line-height: $line-height !default;
+
+// Shadows
+$default-shadow-opacity: 0.2 !default;
+$default-shadow-color: $dark !default;
+
+// Color usage
+$body-background-color: $white !default;
+$default-text-color: $dark !default;
+$default-border-color: $light-grey !default;
+
+$discreet-color-light: $very-light-grey !default;
+$discreet-color: $light-grey !default;
+$discreet-color-dark: $grey !default;
+$discreet-text-color: $discreet-color-dark !default;
+
+$link-color: $blue !default;
+$link-active-color: $dark-blue !default;
+$link-weight: null !default;
+
+// Misc.
+$default-translucent-opacity: 0.4 !default;
+$default-perspective: 600px !default;
+$default-transition-duration: $transition-fast !default;
+$default-transition-easing: null !default; // Be careful with this
