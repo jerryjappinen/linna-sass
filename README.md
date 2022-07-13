@@ -10,34 +10,42 @@ Install `linna-scss`:
 npm install linna-scss
 ```
 
-In your SCSS code, import what you need:
+In your SCSS code, import everything:
 
 ```scss
-// Import shared code: (these will NOT output any CSS)
-@import '~linna-scss/variables';
-@import '~linna-scss/functions';
-@import '~linna-scss/mixins';
-
-// Override default variables to match your style (see variables.scss)
-@import './my-variables';
-
-// Normalizations and defaults: (these output CSS)
-@import '~linna-scss/normalize';
-@import '~linna-scss/defaults';
-@import '~linna-scss/util';
-
-// Then import your own styles
-@import './my-styles/my-own-code.scss';
-@import './my-styles/utilities/some-util-class.scss';
+@import 'linna-scss';
 ```
 
-If you prefer, you can pick only specific files from the codebase:
+Or customise with your own variables:
 
 ```scss
-@import './variables';
-@import './functions';
-@import './mixins';
+@import 'linna-scss/shared';
+@import './my-variables'; // Override default variables here
+@import 'linna-scss/global';
+@import 'linna-scss/util';
+```
 
+Or pick only what you need:
+
+```scss
+// Shared
+@import 'linna-scss/variables';
+@import 'linna-scss/functions';
+@import 'linna-scss/mixins';
+
+@import './my-variables';
+
+// Normalizations and defaults (these output CSS)
+@import 'linna-scss/custom-properties';
+@import 'linna-scss/normalize';
+@import 'linna-scss/defaults';
+@import 'linna-scss/util';
+```
+
+You might not need all defaults or utilities. You can leave them out to optimise file size:
+
+```scss
+@import './defaults/body';
 @import './defaults/forms';
 @import './defaults/tables';
 @import './util/bodytext';
