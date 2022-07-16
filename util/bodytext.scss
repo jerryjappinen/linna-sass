@@ -35,7 +35,7 @@
     @include radius;
     @include pad-loose;
     background-color: $very-very-light-grey;
-    box-shadow: 0 0 0 1px $very-light-grey;
+    border-width: 1px;
   }
 
   pre {
