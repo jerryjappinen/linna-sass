@@ -1,39 +1,27 @@
 // Pixel ratios
 // What to regard as limit for high pixel density (retina)
+$ldpi: 72dpi !default;
 $hdpi: 140dpi !default;
+$uhdpi: 300dpi !default;
 
 // Content-oriented defined paragraph widths
-$width-content-very-tight: 8em !default;
-$width-content-tight: 18em !default;
-$width-content: 30em !default;
-$width-content-loose: 42em !default;
-$width-content-very-loose: 64em !default;
-
-// Defined screen widths in portrait
-$width-iphone-4: 320px !default;
-$width-iphone-5: $width-iphone-4 !default;
-$width-iphone-6: 375px !default;
-$width-iphone-6-plus: 414px !default;
-$width-ipad: 768px !default;
-$width-ipad-pro: 1024px !default;
-
-// Defined screen widths in portrait
-$height-iphone-4: 480px !default;
-$height-iphone-5: 568px !default;
-$height-iphone-6: 667px !default;
-$height-iphone-6-plus: 736px !default;
-$height-ipad: 1024px !default;
-$height-ipad-pro: 1366px !default;
+$content-width-very-tight: 8em !default;
+$content-width-tight: 18em !default;
+$content-width: 30em !default;
+$content-width-loose: 42em !default;
+$content-width-very-loose: 64em !default;
 
 // Breakpoints
 // NOTE: defining breakpoints in px gives more predictable control on devices, and avoids any issues when em is scaled
-$breakpoint-tiny: $width-iphone-6-plus !default;
+$breakpoint-tiny: $iphone-6-plus-width !default;
 $breakpoint-small: 800px !default;
 $breakpoint-medium: 960px !default;
 $breakpoint-large: 1280px !default;
 $breakpoint-very-large: 1440px !default;
 $breakpoint-full: 1920px !default;
 
+$breakpoint-phone-tight: $breakpoint-tiny !default;
 $breakpoint-phone: $breakpoint-small !default;
 $breakpoint-tablet: $breakpoint-large !default;
-$breakpoint-hd: $breakpoint-very-large !default;
+$breakpoint-laptop: $breakpoint-very-large !default;
+$breakpoint-monitor: $breakpoint-full !default;

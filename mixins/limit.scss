@@ -51,21 +51,21 @@
 // Limit width of an element based on column widths
 
 @mixin limit-content-very-tight {
-  @include limit($width-content-very-tight);
+  @include limit($content-width-very-tight);
 }
 
 @mixin limit-content-tight {
-  @include limit($width-content-tight);
+  @include limit($content-width-tight);
 }
 
 @mixin limit-content {
-  @include limit($width-content);
+  @include limit($content-width);
 }
 
 @mixin limit-content-loose {
-  @include limit($width-content-loose);
+  @include limit($content-width-loose);
 }
 
 @mixin limit-content-very-loose {
-  @include limit($width-content-very-loose);
+  @include limit($content-width-very-loose);
 }
