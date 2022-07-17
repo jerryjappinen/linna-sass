@@ -9,3 +9,7 @@
 @mixin padding-box {
   box-sizing: padding-box;
 }
+
+@mixin inherit-box-sizing {
+  box-sizing: inherit;
+}

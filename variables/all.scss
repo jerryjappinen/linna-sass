@@ -36,8 +36,6 @@ $all-variables: (
   default-font: $default-font,
   default-font-size: $default-font-size,
   default-line-height: $default-line-height,
-  default-shadow-opacity: $default-shadow-opacity,
-  default-shadow-color: $default-shadow-color,
   body-background-color: $body-background-color,
   default-text-color: $default-text-color,
   default-border-color: $default-border-color,
@@ -105,9 +103,12 @@ $all-variables: (
   breakpoint-monitor: $breakpoint-monitor,
 
   // radius.scss
+  radius-very-tight: $radius-very-tight,
   radius-tight: $radius-tight,
   radius: $radius,
   radius-loose: $radius-loose,
+  radius-very-loose: $radius-very-loose,
+  round: $round,
 
   // rhythm.scss
   rhythm-tight-half: $rhythm-tight-half,
@@ -142,6 +143,41 @@ $all-variables: (
   scrollbar-color: $scrollbar-color,
   scrollbar-color-hover: $scrollbar-color-hover,
   scrollbar-color-active: $scrollbar-color-active,
+
+  // shadow.scss
+  shadow-color: $shadow-color,
+
+  shadow-x: $shadow-x,
+  shadow-y: $shadow-y,
+  shadow-size: $shadow-size,
+  shadow-spread: $shadow-spread,
+  shadow-opacity: $shadow-opacity,
+
+  shadow-very-tight-x: $shadow-very-tight-x,
+  shadow-very-tight-y: $shadow-very-tight-y,
+  shadow-very-tight-size: $shadow-very-tight-size,
+  shadow-very-tight-spread: $shadow-very-tight-spread,
+  shadow-very-tight-opacity: $shadow-very-tight-opacity,
+
+  shadow-tight-x: $shadow-tight-x,
+  shadow-tight-y: $shadow-tight-y,
+  shadow-tight-size: $shadow-tight-size,
+  shadow-tight-spread: $shadow-tight-spread,
+  shadow-tight-opacity: $shadow-tight-opacity,
+
+  shadow-loose-x: $shadow-loose-x,
+  shadow-loose-y: $shadow-loose-y,
+  shadow-loose-size: $shadow-loose-size,
+  shadow-loose-spread: $shadow-loose-spread,
+  shadow-loose-opacity: $shadow-loose-opacity,
+
+  shadow-very-loose-x: $shadow-very-loose-x,
+  shadow-very-loose-y: $shadow-very-loose-y,
+  shadow-very-loose-size: $shadow-very-loose-size,
+  shadow-very-loose-opacity: $shadow-very-loose-opacity,
+  shadow-very-loose-spread: $shadow-very-loose-spread,
+
+  solid-shadow-width: $solid-shadow-width,
 
   // text.scss
   font-system: $font-system,
