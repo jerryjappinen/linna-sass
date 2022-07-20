@@ -7,6 +7,9 @@
     "node": "16.x"
   },
   "scripts": {
+    "build": "sass spec/index.spec.scss dist/index.css && sass spec/index.spec.scss dist/index.min.css --style=compressed",
+    "dev": "sass spec/index.spec.scss dist/index.css -- --watch",
+    "prepare": "npm run build",
     "patch": "npm version patch -m \"New patch version\" && npm publish && git push -u",
     "minor": "npm version minor -m \"New minor version\" && npm publish && git push -u",
     "major": "npm version major -m \"New major version\" && npm publish && git push -u"
@@ -19,5 +22,8 @@
     "name": "Jerry Jäppinen",
     "email": "eiskis@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
 }

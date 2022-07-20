@@ -34,21 +34,21 @@
 // Single
 
 @mixin push-top ($step: 1) {
-  margin-top: $step * $buffer-tight;
+  margin-top: calc($step * $buffer-tight);
 }
 
 @mixin push-top-even ($step: 1) {
-  margin-top: $step * $buffer;
+  margin-top: calc($step * $buffer);
 }
 
 @mixin push-right ($step: 1) {
-  margin-right: $step * $buffer;
+  margin-right: calc($step * $buffer);
 }
 
 @mixin push-bottom ($step: 1) {
-  margin-bottom: $step * $buffer;
+  margin-bottom: calc($step * $buffer);
 }
 
 @mixin push-left ($step: 1) {
-  margin-left: $step * $buffer;
+  margin-left: calc($step * $buffer);
 }

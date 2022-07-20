@@ -46,17 +46,17 @@
 }
 
 @mixin push-pad-loose-top-even ($step: 1) {
-  margin-top: $step * $pad-loose-horizontal;
+  margin-top: calc($step * $pad-loose-horizontal);
 }
 
 @mixin push-pad-loose-bottom-even ($step: 1) {
-  margin-bottom: $step * $pad-loose-horizontal;
+  margin-bottom: calc($step * $pad-loose-horizontal);
 }
 
 @mixin push-pad-loose-left-even ($step: 1) {
-  margin-left: $step * $pad-loose-vertical;
+  margin-left: calc($step * $pad-loose-vertical);
 }
 
 @mixin push-pad-loose-right-even ($step: 1) {
-  margin-right: $step * $pad-loose-vertical;
+  margin-right: calc($step * $pad-loose-vertical);
 }

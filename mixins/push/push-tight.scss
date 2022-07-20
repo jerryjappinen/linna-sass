@@ -34,21 +34,21 @@
 // Single
 
 @mixin push-tight-top ($step: 1) {
-  margin-top: $step * $buffer-very-tight;
+  margin-top: calc($step * $buffer-very-tight);
 }
 
 @mixin push-tight-top-even ($step: 1) {
-  margin-top: $step * $buffer-tight;
+  margin-top: calc($step * $buffer-tight);
 }
 
 @mixin push-tight-right ($step: 1) {
-  margin-right: $step * $buffer-tight;
+  margin-right: calc($step * $buffer-tight);
 }
 
 @mixin push-tight-bottom ($step: 1) {
-  margin-bottom: $step * $buffer-tight;
+  margin-bottom: calc($step * $buffer-tight);
 }
 
 @mixin push-tight-left ($step: 1) {
-  margin-left: $step * $buffer-tight;
+  margin-left: calc($step * $buffer-tight);
 }

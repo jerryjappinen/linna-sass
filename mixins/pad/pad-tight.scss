@@ -28,19 +28,19 @@
 
 
 @mixin pad-tight-right ($step: 1) {
-  padding-right: $step * $pad-tight-horizontal;
+  padding-right: calc($step * $pad-tight-horizontal);
 }
 
 @mixin pad-tight-right-even ($step: 1) {
-  padding-right: $step * $pad-tight-vertical;
+  padding-right: calc($step * $pad-tight-vertical);
 }
 
 @mixin pad-tight-left ($step: 1) {
-  padding-left: $step * $pad-tight-horizontal;
+  padding-left: calc($step * $pad-tight-horizontal);
 }
 
 @mixin pad-tight-left-even ($step: 1) {
-  padding-left: $step * $pad-tight-vertical;
+  padding-left: calc($step * $pad-tight-vertical);
 }
 
 
@@ -56,17 +56,17 @@
 }
 
 @mixin pad-tight-top ($step: 1) {
-  padding-top: $step * $pad-tight-vertical;
+  padding-top: calc($step * $pad-tight-vertical);
 }
 
 @mixin pad-tight-top-even ($step: 1) {
-  padding-top: $step * $pad-tight-horizontal;
+  padding-top: calc($step * $pad-tight-horizontal);
 }
 
 @mixin pad-tight-bottom ($step: 1) {
-  padding-bottom: $step * $pad-tight-vertical;
+  padding-bottom: calc($step * $pad-tight-vertical);
 }
 
 @mixin pad-tight-bottom-even ($step: 1) {
-  padding-bottom: $step * $pad-tight-horizontal;
+  padding-bottom: calc($step * $pad-tight-horizontal);
 }
