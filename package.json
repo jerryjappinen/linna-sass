@@ -3,6 +3,26 @@
   "version": "1.0.0",
   "description": "Useful Sass utilities and defaults",
   "main": "index.scss",
+  "files": [
+    "dist/",
+    "defaults/",
+    "functions/",
+    "mixins/",
+    "normalize/",
+    "util/",
+    "variables/",
+    "custom-properties.scss",
+    "defaults.scss",
+    "functions.scss",
+    "global.scss",
+    "index.scss",
+    "mixins.scss",
+    "normalize.scss",
+    "replace-variables.scss",
+    "shared.scss",
+    "util.scss",
+    "variables.scss"
+  ],
   "engines": {
     "node": "16.x"
   },
