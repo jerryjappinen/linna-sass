@@ -5,7 +5,3 @@
 :root {
   @include generate-css-vars($all-variables);
 }
-
-// Replace the corresponding Sass variables with the CSS variables
-// NOTE: this will break Sass calculations
-// @include replace-sass-vars($all-variables)

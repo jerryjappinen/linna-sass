@@ -1,5 +1,6 @@
 // These print CSS
 @import './custom-properties';  // Generate CSS variables from Sass variables
+@import './duplicate-variables';  // Replace the Sass variable values with var(--variable-name)
 @import './replace-variables';  // Replace the Sass variable values with var(--variable-name)
 @import './normalize';          // Normalisation
 @import './defaults';           // Common defaults

@@ -13,6 +13,7 @@
     "variables/",
     "custom-properties.scss",
     "defaults.scss",
+    "duplicate-variables.scss",
     "functions.scss",
     "global.scss",
     "index.scss",

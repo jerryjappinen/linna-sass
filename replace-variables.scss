@@ -1,4 +1,3 @@
-
 // colors.scss
 $white: var(--white);
 $very-very-light-grey: var(--very-very-light-grey);
@@ -88,18 +87,19 @@ $content-width: var(--content-width);
 $content-width-loose: var(--content-width-loose);
 $content-width-very-loose: var(--content-width-very-loose);
 
-$breakpoint-tiny: var(--breakpoint-tiny);
-$breakpoint-small: var(--breakpoint-small);
-$breakpoint-medium: var(--breakpoint-medium);
-$breakpoint-large: var(--breakpoint-large);
-$breakpoint-very-large: var(--breakpoint-very-large);
-$breakpoint-full: var(--breakpoint-full);
+// NOTE: we won't replace
+// $breakpoint-tiny: var(--breakpoint-tiny);
+// $breakpoint-small: var(--breakpoint-small);
+// $breakpoint-medium: var(--breakpoint-medium);
+// $breakpoint-large: var(--breakpoint-large);
+// $breakpoint-very-large: var(--breakpoint-very-large);
+// $breakpoint-full: var(--breakpoint-full);
 
-$breakpoint-phone-tight: var(--breakpoint-phone-tight);
-$breakpoint-phone: var(--breakpoint-phone);
-$breakpoint-tablet: var(--breakpoint-tablet);
-$breakpoint-laptop: var(--breakpoint-laptop);
-$breakpoint-monitor: var(--breakpoint-monitor);
+// $breakpoint-phone-tight: var(--breakpoint-phone-tight);
+// $breakpoint-phone: var(--breakpoint-phone);
+// $breakpoint-tablet: var(--breakpoint-tablet);
+// $breakpoint-laptop: var(--breakpoint-laptop);
+// $breakpoint-monitor: var(--breakpoint-monitor);
 
 // radius.scss
 $radius-very-tight: var(--radius-very-tight);
