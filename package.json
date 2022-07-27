@@ -2,27 +2,10 @@
   "name": "linna-sass",
   "version": "1.0.2",
   "description": "Useful Sass utilities and defaults",
-  "main": "index.scss",
+  "main": "src/index.scss",
   "files": [
     "dist/",
-    "defaults/",
-    "functions/",
-    "mixins/",
-    "normalize/",
-    "util/",
-    "variables/",
-    "custom-properties.scss",
-    "defaults.scss",
-    "duplicate-variables.scss",
-    "functions.scss",
-    "global.scss",
-    "index.scss",
-    "mixins.scss",
-    "normalize.scss",
-    "replace-variables.scss",
-    "shared.scss",
-    "util.scss",
-    "variables.scss"
+    "src/"
   ],
   "engines": {
     "node": "16.x"
