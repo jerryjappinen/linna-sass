@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "sass spec/index.spec.scss dist/index.css && sass spec/index.spec.scss dist/index.min.css --style=compressed",
-    "dev": "sass spec/index.spec.scss dist/index.css -- --watch",
+    "dev": "sass spec/index.spec.scss dist/index.css --watch",
     "postinstall": "node postinstall.js",
     "prepare": "npm run build",
     "patch": "npm version patch -m \"New patch version\" && npm publish && git push -u",
