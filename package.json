@@ -6,7 +6,7 @@
   "files": [
     "dist/",
     "src/",
-    "postinstall.js"
+    "scripts/"
   ],
   "engines": {
     "node": "16.x"
@@ -15,7 +15,7 @@
     "build": "sass spec/index.spec.scss dist/index.css && sass spec/index.spec.scss dist/index.min.css --style=compressed",
     "test": "sass spec/index.spec.scss",
     "dev": "sass spec/index.spec.scss dist/index.css --watch",
-    "postinstall": "node postinstall.js",
+    "postinstall": "node scripts/postinstall.js",
     "prepare": "npm run build",
     "patch": "npm version patch -m \"New patch version\" && npm publish && git push -u",
     "minor": "npm version minor -m \"New minor version\" && npm publish && git push -u",
@@ -30,8 +30,10 @@
     "email": "eiskis@gmail.com"
   },
   "license": "MIT",
+  "dependencies": {
+    "mv": "^2.1.1"
+  },
   "devDependencies": {
-    "mv": "^2.1.1",
     "sass": "^1.53.0"
   }
 }

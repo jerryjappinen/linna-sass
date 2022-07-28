@@ -1,4 +1,4 @@
-const mv = require('mv')
+const mv = require('./mv')
 
 // Upon install, move all files under src/ to the root folder
 mv('./src', './', {
