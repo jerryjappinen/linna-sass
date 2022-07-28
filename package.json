@@ -5,7 +5,8 @@
   "main": "src/index.scss",
   "files": [
     "dist/",
-    "src/"
+    "src/",
+    "postinstall.js"
   ],
   "engines": {
     "node": "16.x"
