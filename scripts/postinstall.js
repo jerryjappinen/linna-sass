@@ -1,7 +1,8 @@
+const path = require('path')
 const mv = require('mv')
 
 // Upon install, move all files under src/ to the root folder
-mv('../src', '../', {
+mv(path.resolve(__dirname, '../src'), path.resolve(__dirname, '../'), {
   mkdirp: false,
   clobber: false
 }, (err) => {
