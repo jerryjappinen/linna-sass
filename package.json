@@ -1,6 +1,6 @@
 {
   "name": "linna-sass",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Useful Sass utilities and defaults",
   "main": "src/index.scss",
   "files": [
