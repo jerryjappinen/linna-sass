@@ -10,12 +10,12 @@ body {
     font-size: $default-font-size;
   }
 
-  @if variable-exists(default-text-color) {
-    color: $default-text-color;
+  @if variable-exists(text-color) {
+    color: $text-color;
   }
 
-  @if variable-exists(body-background-color) {
-    background-color: $body-background-color;
+  @if variable-exists(background-color) {
+    background-color: $background-color;
   }
 
   @if variable-exists(default-line-height) {
@@ -107,12 +107,12 @@ button,
 input,
 textarea {
 
-  @if variable-exists(default-border-color) {
-    border-color: $default-border-color;
+  @if variable-exists(border-color) {
+    border-color: $border-color;
 
     &:before,
     &:after {
-      border-color: $default-border-color;
+      border-color: $border-color;
     }
 
   }
